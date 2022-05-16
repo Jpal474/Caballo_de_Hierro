@@ -1,0 +1,228 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Caballo de Hierro</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"> </a> <img src="{% static 'images/HORIZONTAL_BCO.png' %}"  height="60">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'servicios' %}">Servicios</a></li>
+        <li><a href="#">Referencias</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contacto<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id="dropdown1" class="dropdown-content dd">
+        <li><a href="#!" class="white-text">Correo Electrónico</a></li>
+        <li><a href="https://www.facebook.com/" class="white-text">Facebook</a></li>
+        <li><a href="https://www.whatsapp.com/" class="white-text">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/" class="white-text">Instagram</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="white-text">Inicia Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center  text-lighten-2 txt">Caballo de Hierro</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Una consultoría especializada en temas de atención pública y privada.</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-teal boton">Nuestra Filosofía</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/backround1.jpg' %}" ></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Nuestra Historia</h4>
+          <p class="center-align ">La creación de la consultoría Caballo de Hierro, se origina a partir de la constante necesidad de los diferentes actores del ámbito político y empresarial, que de forma constante han requerido asesoría técnica en las etapas de planeación, organización, dirección y control dentro de las actividades que desempeñan.  
+            
+            Logrando con ello la competitividad de las diversas instituciones u organizaciones, así como la asertividad e impacto en las decisiones de carácter político y empresarial. Contribuyendo de esta manera al establecimiento de los cimientos para la transformación de un México más próspero y de oportunidades. 
+            </p> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 prl">Contamos con Servicios para el Sector Público y Privado</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/background2.jpg' %}"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>¿A qué nos dedicamos?</h4>
+          <p class="center-align ">
+            <br>
+            Capacitación en administración pública a público general y funcionarios públicos. <br>
+            Diseño, implementación y evaluación de política pública. <br>
+            Elaboración de Proyectos y Planes Estratégicos. <br>
+            Investigación de mercados. <br>
+          </p> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 prl">Disponemos Cursos y Talleres para Sector Público y Privado</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/background3.jpg' %}" alt="Unsplashed background img 3"></div>
+    
+  </div>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultoría Caballo de Hierro</h5>
+          <p class="grey-text text-lighten-4">
+            Avenida Tecnológico #1500, Col. Lomas de Santiaguito. 
+            <br>Morelia, Michoacán, México.
+            <br>Email: cdh@hotmail.com
+            <br>Telefono: +52 (555) 555 5555  
+          </p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container cpr">
+        ©Copyright ?? 
+      </div>
+    </div>
+  </footer>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+
+  </body>
+  <style>
+    nav ul a, nav .brand-logo {
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    .sidenav-trigger {
+      color: #0c4c74;
+    }
+
+    .parallax-container {
+      min-height: 380px;
+      line-height: 0;
+      height: auto;
+      color: #ffffff;
+      
+    }
+      .parallax-container .section {
+        width: 100%;
+      }
+
+    @media only screen and (max-width : 992px) {
+      .parallax-container .section {
+        position: absolute;
+        top: 40%;
+      }
+      #index-banner .section {
+        top: 10%;
+      }
+    }
+
+    @media only screen and (max-width : 600px) {
+      #index-banner .section {
+        top: 0;
+      }
+    }
+
+    .icon-block {
+      padding: 0 15px;
+    }
+    .icon-block .material-icons {
+      font-size: inherit;
+    }
+
+    footer.page-footer {
+      margin: 0;
+    }
+
+    i,.txt{
+      color: #cc6620  ;
+    }
+    a.boton{
+      background-color: #0c4c74;
+    }
+    ul.dd{
+      background-color: #0c4c74;
+      
+    }
+    .foot{
+      background-color: #0c4c74;
+    }
+    h4, .prl{
+      color: #cc6620;
+    }
+    .cpr{
+      text-align: right;
+    }
+    nav{
+      background-color: #0c4c74;
+    }
+
+  </style>
+
+</html>

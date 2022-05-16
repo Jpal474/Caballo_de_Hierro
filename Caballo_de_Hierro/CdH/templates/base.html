@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <!DOCTYPE html>
+    {%block header%}
+    <html lang="en">
+        
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Caballo de Hierro</title>
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
+    </head>
+    <body>
+      <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo"> </a> <img src="{% static 'images/HORIZONTAL_BCO.png' %}"  height="60">
+          <ul class="right hide-on-med-and-down">
+            <li><a href="{% url 'servicios' %}">Servicios</a></li>
+            <li><a href="#">Referencias</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contacto<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+          </ul>
+          <ul id="dropdown1" class="dropdown-content dd">
+            <li><a href="#!" class="white-text">Correo Electrónico</a></li>
+            <li><a href="https://www.facebook.com/" class="white-text">Facebook</a></li>
+            <li><a href="https://www.whatsapp.com/" class="white-text">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/" class="white-text">Instagram</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="white-text">Inicia Sesión</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      
+    
+          {%endblock header%}
+          {%block body%}
+          
+          
+          {%endblock body%}
+     
+        
+</body><br>
+<p></p><p></p>
+{% block footer%}
+<footer class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultoría Caballo de Hierro</h5>
+          <p class="grey-text text-lighten-4">
+            Avenida Tecnológico #1500, Col. Lomas de Santiaguito. 
+            <br>Morelia, Michoacán, México.
+            <br>Email: cdh@hotmail.com
+            <br>Telefono: +52 (555) 555 5555  
+          </p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container cpr">
+        ©Copyright ?? 
+      </div>
+    </div>
+  </footer>
+          {%endblock footer%}
+<style>
+    nav ul a, nav .brand-logo {
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    .sidenav-trigger {
+      color: #0c4c74;
+    }
+
+    .parallax-container {
+      min-height: 380px;
+      line-height: 0;
+      height: auto;
+      color: #ffffff;
+      
+    }
+      .parallax-container .section {
+        width: 100%;
+      }
+
+    @media only screen and (max-width : 992px) {
+      .parallax-container .section {
+        position: absolute;
+        top: 40%;
+      }
+      #index-banner .section {
+        top: 10%;
+      }
+    }
+
+    @media only screen and (max-width : 600px) {
+      #index-banner .section {
+        top: 0;
+      }
+    }
+
+    .icon-block {
+      padding: 0 15px;
+    }
+    .icon-block .material-icons {
+      font-size: inherit;
+    }
+
+    footer.page-footer {
+      margin: 0;
+    }
+
+    i,.txt{
+      color: #cc6620  ;
+    }
+    a.boton{
+      background-color: #0c4c74;
+    }
+    ul.dd{
+      background-color: #0c4c74;
+      
+    }
+    .foot{
+      background-color: #0c4c74;
+    }
+    h4, .prl{
+      color: #cc6620;
+    }
+    .cpr{
+      text-align: right;
+    }
+    nav{
+      background-color: #0c4c74;
+    }
+
+</style>
+ 
+  </html>

@@ -1,0 +1,214 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Caballo de Hierro</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"> </a> <img src="{% static 'images/HORIZONTAL_BCO.png' %}"  height="60">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Referencias</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contacto<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id="dropdown1" class="dropdown-content dd">
+        <li><a href="#!" class="white-text">Correo Electrónico</a></li>
+        <li><a href="https://www.facebook.com/" class="white-text">Facebook</a></li>
+        <li><a href="https://www.whatsapp.com/" class="white-text">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/" class="white-text">Instagram</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="white-text">Inicia Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h4>Catalogo de servicios ofertados por parte del <br> Corporativo Caballo de Hierro Consulting S.A.S.</h4>
+    <div class="nav-content">
+      <ul class="tabs tabs-fixed-width ">
+        <li class="tab"><a class="#ffffff white-text" href="#test1">Público</a></li>
+        <li class="tab"><a class="#ffffff white-text" href="#test2">Privado</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="test1" class="col s12 serv">
+
+    <div class="row">
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/encuesta.jpg' %}">
+            <span class="card-title">Encuestas</span>
+          </div>
+          <div class="card-content">
+            <p>Encuestas cara a cara municipales, distritos locales y/o federales</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/encuestadigital.jpg' %}">
+            <span class="card-title">Encuestas Digitales</span>
+          </div>
+          <div class="card-content">
+            <p>Encuestas por internet y redes sociales </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/Politicaspublicas.jpg' %}">
+            <span class="card-title">Políticas públicas</span>
+          </div>
+          <div class="card-content">
+            <p>Diseño, implementación y evaluación de políticas públicas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <hr>
+    <div class="row">  
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/plan_desarrollo.jpg' %}">
+            <span class="card-title">Planes de Desarrollo</span>
+          </div>
+          <div class="card-content">
+            <p>Diseño, implementación y evaluación de Planes de Desarrollo.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/entrevistas.jpg' %}">
+            <span class="card-title">Entrevistas a profundidad</span>
+          </div>
+          <div class="card-content">
+            <p>Entrevistas a profundidad que nos permite conocer de manera detallada la perspectiva que tienen 
+      lideres de opinión con respecto a un tema determinado mediante un dialogo abierto.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s4 m4">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="{% static 'images/gruposfocales.jpg' %}">
+            <span class="card-title">Grupos focales</span>
+          </div>
+          <div class="card-content">
+            <p>Grupos focales es un método de investigación que permite captar feedback 
+      sobre políticos y el intercambio de ideas entre expertos, siendo el principal propósito 
+      que cada participante exprese sus ideas y  opiniones. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="test2" class="col s12 serv">Test 2</div>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultoría Caballo de Hierro</h5>
+          <p class="grey-text text-lighten-4">
+            Avenida Tecnológico #1500, Col. Lomas de Santiaguito. 
+            <br>Morelia, Michoacán, México.
+            <br>Email: cdh@hotmail.com
+            <br>Telefono: +52 (555) 555 5555  
+          </p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container cpr">
+        ©Copyright ?? 
+      </div>
+    </div>
+</footer>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+
+  </body>
+  <style>
+    nav ul a, nav .brand-logo {
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    .sidenav-trigger {
+      color: #0c4c74;
+    }
+
+    footer.page-footer {
+      margin: 0;
+    }
+
+    .tabs{
+      color:white ;
+      
+    }
+    a.boton{
+      background-color: #0c4c74;
+    }
+    ul.dd{
+      background-color: #0c4c74;
+      
+    }
+    .foot,.card-title{
+      background-color: #0c4c74;
+    }
+    h4,.card-title{
+      color: #cc6620;
+      text-align: center;
+    }
+    .cpr{
+      text-align: right;
+    }
+    nav{
+      background-color: #0c4c74;
+    }
+    .tab{
+      background-color: #0c4c74d7;
+    }
+
+    body{
+      overflow-x: hidden;
+    }
+
+  </style>
+
+</html>

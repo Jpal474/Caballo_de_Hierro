@@ -1,0 +1,66 @@
+{%extends 'base.html'%}
+{%block body%}
+<div class="container">
+  <h3 class="center-align">Editar Noticia</h3>
+  <hr>
+</div>
+<div class="row">
+  <form class="col s12" method="POST" action="/CdH/guardar_noticia">
+    {% csrf_token %}
+    <div class="file-field input-field  col s5">
+      <div class="btn">
+         
+        <span>Imagen</span>
+        <input type="file" >
+      </div>
+      <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <div class="input-field col s5">
+          <i class="material-icons prefix">title</i>
+          <input id="nombre" type="text" class="validate"  name="titulo" value="" pattern="" required>
+          <label for="nombre" style="color:black">Titulo</label>
+          <span class="helper-text" >Titutlo de la Noticia</span>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-icons prefix">text_fields</i>
+          <input id="icon_prefix" type="text" class="validate" name="cuerpo" value="" pattern="" required>
+          <label for="icon_prefix" style="color:black">Cuerpo</label>
+          <span class="helper-text" >Cuerpo de la Noticia</span>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-icons prefix">text_fields</i>
+          <input id="icon_prefix" type="text" class="validate" name="resumen" value="" pattern="" required>
+          <label for="icon_prefix" style="color:black">Resumen</label>
+          <span class="helper-text" >Resumen de la Noticia</span>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-icons prefix">person</i>
+          <input id="icon_prefix" type="text" class="validate"  name="autor" value="" pattern="" required>
+          <label for="icon_prefix" style="color:black"> Autor</label>
+          <span class="helper-text"  >Autor de la Noticia</span>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-icons prefix">date_range</i>
+          <input id="icon_telephone" type="password" class="validate" name="fecha" value="" pattern="" required>
+          <label for="icon_telephone" style="color:black">Fecha</label>
+          <span class="helper-text"  >Fecha de Publicacion de la Noticia</span>
+        </div>
+         
+          <div class="input-field col s5">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+          </div>
+          <div class="input-field col s5">
+            <a class="waves-effect waves-light btn red" href=""><i class="material-icons left">cancel</i>Cancelar</a>
+          </div>
+        
+       
+</button>
+      
+      </form>
+      
+      
+</div>
+    {%endblock body%}
